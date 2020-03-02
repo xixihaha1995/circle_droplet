@@ -3,6 +3,7 @@ close all;
 clc;
 currentHight = 1;
 currentRun = 2;
+
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt';
 prefix_6 = num2str(currentHight);
 prefix_7 ='_r';
@@ -51,11 +52,7 @@ for i = 0:1:totalNumber
     [centers,radii] = imfindcircles(BW,[37 65],'ObjectPolarity','bright');
 
     
-    figure(1);
-    imshow(a);
-    hold on
-    viscircles(centers,radii);
-    hold off
+
     if(ii == LastIm + 1)
         fprintf('Total %d images have been processed, %d have been circled', ...
         totalNumber, totalNumber - numCircledFailuer);
@@ -64,21 +61,25 @@ for i = 0:1:totalNumber
     if(size(radii) == 0)
         numCircledFailuer = numCircledFailuer + 1;
         
-        stats = regionprops(BW,'centroid');
-        
+        stats = regionprops('table',BW,'Centroid',...
+            'MajorAxisLength','MinorAxisLength')
         centers = stats.Centroid;
         diameters = mean([stats.MajorAxisLength stats.MinorAxisLength],2);
         radii = diameters/2;
-        
-
-        continue;
     end
     
     siz=size(radii);
-    if(siz(1) > 1)
-        disp('Detect more than one circles');
-        break;
-    end
+%     if(siz(1) > 1)
+%         disp('Detect more than one circles');
+%         break;
+%     end
+    
+    figure(1);
+    imshow(a);
+    hold on
+    viscircles(centers,radii);
+    hold off
+    
     if(size(radii) == 0)
         filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
     else
