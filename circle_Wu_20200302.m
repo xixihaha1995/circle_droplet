@@ -3,11 +3,11 @@ close all;
 clc;
 
 
-prefix = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r1\ndl14_h4_r1_';
+prefix = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r1\ndl14_ht4_r1_';
 
 ext = '.bmp';
 ext_out = '.txt';
-OutputDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\images\Processed_20200107_ndl14_h4_r1\Circled_ndl14_h4_r1_';
+% OutputDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\images\Processed_20200107_ndl14_h4_r1\Circled_ndl14_h4_r1_';
 
 
 ref_index = input('Please enter the number of the reference image (ref_index =?):  ');
@@ -52,7 +52,11 @@ for i = 0:1:totalNumber
     if(size(radii) == 0)
         continue;
     end
-    filename_out = strcat(OutputDir,num2str(ii, '%05g'),ext_out);
+    if(size(radii)>1)
+        disp('Detect more than one circles');
+        break;
+    end
+    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
