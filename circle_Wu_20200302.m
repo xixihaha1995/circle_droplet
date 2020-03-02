@@ -27,8 +27,7 @@ totalNumber = LastIm - FirstIm+1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
 numCircledFailuer = 0;
-centersSave{totalNumber} = [];
-radiiSave{totalNumber} = [];
+
 for i = 0:1:totalNumber
  
     if i==0
@@ -50,8 +49,7 @@ for i = 0:1:totalNumber
     BW = a0>max(max(a0))/5; %another way to convert into BW 
 
     [centers,radii] = imfindcircles(BW,[37 65],'ObjectPolarity','bright');
-    centersSave{i+1} = centers;
-    radiiSave{i+1} = radii;
+
     
     figure(1);
     imshow(a);
@@ -65,6 +63,14 @@ for i = 0:1:totalNumber
     end
     if(size(radii) == 0)
         numCircledFailuer = numCircledFailuer + 1;
+        
+        stats = regionprops(BW,'centroid');
+        
+        centers = stats.Centroid;
+        diameters = mean([stats.MajorAxisLength stats.MinorAxisLength],2);
+        radii = diameters/2;
+        
+
         continue;
     end
     
@@ -73,7 +79,11 @@ for i = 0:1:totalNumber
         disp('Detect more than one circles');
         break;
     end
-    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+    if(size(radii) == 0)
+        filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
+    else
+        filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+    end
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
