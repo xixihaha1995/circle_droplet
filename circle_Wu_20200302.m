@@ -54,25 +54,32 @@ for i = 0:1:totalNumber
     
 
     if(ii == LastIm + 1)
-        fprintf('Total %d images have been processed, %d have been circled', ...
-        totalNumber, totalNumber - numCircledFailuer);
+        fprintf('Total %d images have been processed, %d have been circled, %d have been centroided', ...
+        totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
         break;
     end
+    
+    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+    
     if(size(radii) == 0)
         numCircledFailuer = numCircledFailuer + 1;
+        filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
         
         stats = regionprops('table',BW,'Centroid',...
             'MajorAxisLength','MinorAxisLength')
         centers = stats.Centroid;
+        centers = centers(1,:);
         diameters = mean([stats.MajorAxisLength stats.MinorAxisLength],2);
         radii = diameters/2;
+        radii = radii(1,:);
     end
     
     siz=size(radii);
-%     if(siz(1) > 1)
-%         disp('Detect more than one circles');
-%         break;
-%     end
+    
+    if(siz(1) > 1)
+        disp('Detect more than one circles');
+        break;
+    end
     
     figure(1);
     imshow(a);
@@ -80,11 +87,11 @@ for i = 0:1:totalNumber
     viscircles(centers,radii);
     hold off
     
-    if(size(radii) == 0)
-        filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
-    else
-        filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
-    end
+%     if(size(radii) == 0)
+%         filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
+%     else
+%         filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+%     end
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
