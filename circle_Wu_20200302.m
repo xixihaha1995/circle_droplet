@@ -101,11 +101,11 @@ for i = 0:1:totalNumber
     
 
     
-    figure(1);
-    imshow(a);
-    hold on
-    viscircles(centers,radii);
-    hold off
+%     figure(1);
+%     imshow(a);
+%     hold on
+%     viscircles(centers,radii);
+%     hold off
 
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
