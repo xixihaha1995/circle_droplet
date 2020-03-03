@@ -1,8 +1,12 @@
 % drop_edge_Wu_20200216
 close all; 
 clc;
-currentHight = 3;
-currentRun = 1;
+c = clock;
+disp(c);
+disp(prefix);
+
+currentHight = input('Please enter currentHight:  ');
+currentRun = input('Please enter currentRun:  ');
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt';
 prefix_6 = num2str(currentHight);
@@ -17,9 +21,7 @@ prefix_5= '_';
 prefix = strcat(prefix_1,prefix_6,prefix_7,prefix_2,prefix_3,prefix_8,prefix_9,prefix_4,prefix_5);
 
 format shortg
-c = clock;
-disp(c);
-disp(prefix);
+
 
 ext = '.bmp';
 ext_out = '.txt';
@@ -43,14 +45,16 @@ for i = 0:1:totalNumber
     
     
     if(ii == LastIm + 1)
-        fprintf('Total %d images have been processed, %d have been circled, %d have been centroided\n', ...
+        fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
             totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
+        disp('------');
+        diary myDiaryFile
         break;
     end
     
     
-    disp('The present image number: ');
-    disp(ii);
+%     disp('The present image number: ');
+%     disp(ii);
     filename = strcat(prefix, num2str(ii, '%05g'),ext);
 %     [a, map] = imread(filename);
     a = imread(filename);
@@ -94,15 +98,14 @@ for i = 0:1:totalNumber
     
 
     
-    figure(1);
-    imshow(a);
-    hold on
-    viscircles(centers,radii);
-    hold off
+%     figure(1);
+%     imshow(a);
+%     hold on
+%     viscircles(centers,radii);
+%     hold off
 
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
-    diary myDiaryFile
 end
 
