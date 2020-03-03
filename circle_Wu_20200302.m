@@ -1,12 +1,14 @@
 % drop_edge_Wu_20200216
 close all; 
 clc;
+
+format shortg
 c = clock;
 disp(c);
-disp(prefix);
 
-currentHight = input('Please enter currentHight:  ');
-currentRun = input('Please enter currentRun:  ');
+
+currentHight = input('currentHight:  ');
+currentRun = input('enter currentRun:  ');
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt';
 prefix_6 = num2str(currentHight);
@@ -19,17 +21,18 @@ prefix_4 =num2str(currentRun);
 prefix_5= '_';
 
 prefix = strcat(prefix_1,prefix_6,prefix_7,prefix_2,prefix_3,prefix_8,prefix_9,prefix_4,prefix_5);
+disp(prefix);
 
-format shortg
+
 
 
 ext = '.bmp';
 ext_out = '.txt';
 
 
-ref_index = input('Please enter the number of the reference image (ref_index =?):  ');
+ref_index = input('the reference image (ref_index =?):  ');
 FirstIm = ref_index + 1;
-LastIm = input('Please enter number of the last image (LastIm =?):  ');
+LastIm = input('the last image before impacting (LastIm =?):  ');
 totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
@@ -98,11 +101,11 @@ for i = 0:1:totalNumber
     
 
     
-%     figure(1);
-%     imshow(a);
-%     hold on
-%     viscircles(centers,radii);
-%     hold off
+    figure(1);
+    imshow(a);
+    hold on
+    viscircles(centers,radii);
+    hold off
 
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface

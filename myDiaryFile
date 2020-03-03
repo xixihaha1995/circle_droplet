@@ -629,3 +629,33 @@ Please enter the number of the reference image (ref_index =?):  -860
 Please enter number of the last image (LastIm =?):  -847
 Total 13 images have been processed, 13 have been circled, 0 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            2           20           10       34.518
+
+currentHight:  5
+enter currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r2\ndl14_ht5_r2_
+the reference image (ref_index =?):  -972
+the last image before impacting (LastIm =?):  -960
+Total 12 images have been processed, 12 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            2           20           11       49.455
+
+currentHight:  5
+enter currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r3\ndl14_ht5_r3_
+the reference image (ref_index =?):  -1066
+the last image before impacting (LastIm =?):  -1053
+Total 13 images have been processed, 13 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            2           20           13        8.469
+
+currentHight:  6
+enter currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt6_r1\ndl14_ht6_r1_
+the reference image (ref_index =?):  -815
+the last image before impacting (LastIm =?):  -796
+Total 19 images have been processed, 17 have been circled, 2 have been centroided.
+------
