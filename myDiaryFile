@@ -669,3 +669,185 @@ the reference image (ref_index =?):  -1158
 the last image before impacting (LastIm =?):  -1139
 Total 19 images have been processed, 17 have been circled, 2 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            2           20           18       10.314
+
+currentHight:  6
+enter currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt6_r3\ndl14_ht6_r3_
+the reference image (ref_index =?):  -2402
+the last image before impacting (LastIm =?):  -2383
+Total 19 images have been processed, 16 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            2           20           22       16.532
+
+currentNdl: 18
+currentHight:  0
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl0_r1\ndl0_r1_
+reference image (ref_index =?):  0
+last image before impacting (LastIm =?):  0
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl0_r1\ndl0_r1_00000.bmp.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.', fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 41)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',41,0)">line 41</a>)
+totalNumber = LastIm - FirstIm + 1 ;
+} 
+circle_Wu_20200302
+         2020            3            2           20           23       39.985
+
+currentNdl: 18
+currentHight:  0
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r1\ndl18_ht0_r1_
+reference image (ref_index =?):  -701
+last image before impacting (LastIm =?):  -695
+Total 6 images have been processed, 6 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            2           20           24        8.813
+
+currentNdl: 18
+currentHight:  0
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r2\ndl18_ht0_r2_
+reference image (ref_index =?):  -850
+last image before impacting (LastIm =?):  -843
+Total 7 images have been processed, 7 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           25
+
+  Column 6
+
+       24.783
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1048
+last image before impacting (LastIm =?):  -1040
+Detect more than one circles
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           32
+
+  Column 6
+
+       38.751
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1048
+last image before impacting (LastIm =?):  -1040
+Detect more than one circles
+current image
+       -1041
+
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           33
+
+  Column 6
+
+        8.407
+
+currentNdl: -1042
+currentHight:  -1040
+currentRun:  0
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl-1042_hgt-1040_r0\ndl-1042_ht-1040_r0_
+reference image (ref_index =?):  0
+last image before impacting (LastIm =?):  0
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File
+"C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl-1042_hgt-1040_r0\ndl-1042_ht-1040_r0_00000.bmp.bmp"
+does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.',
+                fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 42)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',42,0)">line 42</a>)
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp');
+} 
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           33
+
+  Column 6
+
+       34.262
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1042
+last image before impacting (LastIm =?):  -1040
+Total 2 images have been processed, 2 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           34
+
+  Column 6
+
+       12.596
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1048
+last image before impacting (LastIm =?):  -1040
+Detect more than one circles
+current image
+       -1041
+
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           35
+
+  Column 6
+
+       33.392
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1048
+last image before impacting (LastIm =?):  -1040
+Total 8 images have been processed, 8 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            2           20           39
+
+  Column 6
+
+       58.033
+
+currentNdl: 18
+currentHight:  1
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r1\ndl18_ht1_r1_
+reference image (ref_index =?):  -804
+last image before impacting (LastIm =?):  -796
+Total 8 images have been processed, 7 have been circled, 1 have been centroided.
+------

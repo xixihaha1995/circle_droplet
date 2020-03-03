@@ -6,21 +6,26 @@ format shortg
 c = clock;
 disp(c);
 
-
+currentNdl = input('currentNdl: ');
 currentHight = input('currentHight:  ');
-currentRun = input('enter currentRun:  ');
+currentRun = input('currentRun:  ');
 
-prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt';
+prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
+prefix_10 = num2str(currentNdl);
+prefix_11 = '_hgt';
 prefix_6 = num2str(currentHight);
 prefix_7 ='_r';
 prefix_2 = num2str(currentRun);
-prefix_3 ='\ndl14_ht';
+prefix_3 ='\ndl';
+prefix_12 = num2str(currentNdl);
+prefix_13 = '_ht';
 prefix_8 =num2str(currentHight);
 prefix_9 ='_r';
 prefix_4 =num2str(currentRun);
 prefix_5= '_';
 
-prefix = strcat(prefix_1,prefix_6,prefix_7,prefix_2,prefix_3,prefix_8,prefix_9,prefix_4,prefix_5);
+prefix = strcat(prefix_1,prefix_10,prefix_11,prefix_6,prefix_7,prefix_2,prefix_3,...
+    prefix_12,prefix_13,prefix_8,prefix_9,prefix_4,prefix_5);
 disp(prefix);
 
 
@@ -30,9 +35,9 @@ ext = '.bmp';
 ext_out = '.txt';
 
 
-ref_index = input('the reference image (ref_index =?):  ');
+ref_index = input('reference image (ref_index =?):  ');
 FirstIm = ref_index + 1;
-LastIm = input('the last image before impacting (LastIm =?):  ');
+LastIm = input('last image before impacting (LastIm =?):  ');
 totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
@@ -68,12 +73,14 @@ for i = 0:1:totalNumber
     BW = a0>max(max(a0))/5; %another way to convert into BW 
 
     
-    [centers,radii] = imfindcircles(BW,[37 65],'ObjectPolarity','bright');
+    [centers,radii] = imfindcircles(BW,[38 65],'ObjectPolarity','bright');
     filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
     
     siz=size(radii);
     if(siz(1) > 1)
         disp('Detect more than one circles');
+        disp('current image');
+        disp(ii);
         break;
     end
     
@@ -101,11 +108,11 @@ for i = 0:1:totalNumber
     
 
     
-%     figure(1);
-%     imshow(a);
-%     hold on
-%     viscircles(centers,radii);
-%     hold off
+    figure(1);
+    imshow(a);
+    hold on
+    viscircles(centers,radii);
+    hold off
 
     fid = fopen(filename_out,'w');
     fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
