@@ -116,7 +116,7 @@ for i = 0:1:totalNumber
         
         stats = regionprops('table',BW,'Centroid',...
             'MajorAxisLength','MinorAxisLength','Orientation');
-        stats = sortrows(stats,2,'descend')
+        stats = sortrows(stats,2,'descend');
         centers = stats.Centroid;
 %         centers = centers(1,:);
         majorAxisLength = stats.MajorAxisLength(1);
@@ -151,8 +151,8 @@ if (mean(C{2})>1600 || mean(C{2})<900)
 elseif (min(C{4})<30)
     msg='radius of droplet are too small';
     error(msg)
-elseif (min(C{4})>110)
-    msg='radius of droplet are too big');
+elseif (max(C{4})>115)
+    msg='radius of droplet are too big';
     error(msg)
 end
 
