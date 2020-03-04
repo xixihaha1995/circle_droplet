@@ -1,4 +1,4 @@
-% drop_edge_Wu_20200216
+% circle_droplet_Wu_20200304
 close all; 
 clc;
 
@@ -50,25 +50,7 @@ LastIm = input('last image before impacting (LastIm =?):  ');
 totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
-% Impact_location = 1225; 
-% 
-% y2 = Impact_location+500;
-% y1 = Impact_location-500;
-% 
-% figure(1);
-% plot(smooth(double((ref_a(:, Impact_location-500)))),'r');
-% hold on
-% plot(smooth(double((ref_a(:, Impact_location+500)))), 'g');
-% hold off
-% disp('Stretch figure 1 horizontally for a better resolution..... ')
-% disp('Click on the middle pick in red line once: ?')
-% [x1,y1g] = ginput(1);
-% disp(' ... ')
-% disp('Click on the middle pick in green line once: ?')
-% [x2,y2g] = ginput(1);
-% disp(x1);
-% disp(x2);
-% disp('Save the values of x1 and x2 in this program for our record.... !')
+
 
 numCircledFailuer = 0;
 
@@ -121,32 +103,6 @@ for i = 0:1:totalNumber
     plot(boundary(:,2), boundary(:,1),'r');
     hold off;
     
-% %     save titled image
-%     profl = B{K_I(1)};
-%     [min_x, I_min]=min(profl(:,2)); %In the horizontal direction
-%     [max_x, I_max]=max(profl(:,2));
-%     x_temp = profl(I_min:I_max, 2)';
-%     y_temp = profl(I_min:I_max, 1)';
-% 
-%     figure(3); imshow(a);
-%     hold on
-%     plot(x_temp, y_temp, 'r');
-%     %hold off
-% 
-%    % alpha = 0; %The flat surface has aero angle in image 
-%     profile_x = (y_temp-x1).*sin(alpha)+(x_temp-y1).*cos(alpha);
-%     profile_y = (y_temp-x1).*cos(alpha)-(x_temp-y1).*sin(alpha);
-% 
-%     plot(profile_x+y1, profile_y+x1, 'y')
-%     hold off
-%     
-% %     filename_out = strcat(prefix, num2str(ii, '%05g'),ext_out);
-% %     fid = fopen(filename_out,'w');
-% %     fprintf(fid, '%8.2f \t %8.2f\n',[profile_x; -profile_y]); %relative to flat surface
-% %     fclose(fid);
-%     clear profile_x profile_y
-% 
-% %     save titled image  
 
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
