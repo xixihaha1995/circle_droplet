@@ -116,14 +116,18 @@ for i = 0:1:totalNumber
         
         stats = regionprops('table',BW,'Centroid',...
             'MajorAxisLength','MinorAxisLength','Orientation');
+        stats = sortrows(stats,2,'descend')
         centers = stats.Centroid;
 %         centers = centers(1,:);
         majorAxisLength = stats.MajorAxisLength(1);
         minorAxisLength =stats.MinorAxisLength(1);
+        if majorAxisLength<30
+            majorAxisLength=strcat(num2str(majorAxisLength),'invalidEcllipse');
+        end
         orientation = stats.Orientation(1);
         
         fid = fopen(filename_out,'a');
-        fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii; cenXX; cenYY; majorAxisLength;...
+        fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii; cenXX; cenYY; majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
     
@@ -134,7 +138,22 @@ for i = 0:1:totalNumber
     
 
     fid = fopen(filename_out,'a');
-    fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f\n',[ii;cenXX; cenYY;radii]); %relative to flat surface
+    fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f\n',[ii;cenXX; cenYY;radii]); %relative to flat surface
     fclose(fid);
 end
+
+fileID = fopen(filename_out);
+C = textscan(fileID, '%d %f %f %f %f %d');
+
+if (mean(C{2})>1600 || mean(C{2})<900)
+    msg='locations of droplet are wrong';
+    error(msg)
+elseif (min(C{4})<30)
+    msg='radius of droplet are too small';
+    error(msg)
+elseif (min(C{4})>110)
+    msg='radius of droplet are too big');
+    error(msg)
+end
+
 
