@@ -6,9 +6,17 @@ format shortg
 c = clock;
 disp(c);
 
+currentDate = 20200107;
+% 20200107 is blank
+
 currentNdl = input('currentNdl: ');
 currentHight = input('currentHight:  ');
 currentRun = input('currentRun:  ');
+
+outDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\';
+
+filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
+    num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
 prefix_10 = num2str(currentNdl);
@@ -74,8 +82,8 @@ for i = 0:1:totalNumber
 
     
     [centers,radii] = imfindcircles(BW,[38 65],'ObjectPolarity','bright');
-    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
-    
+%     filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+
     siz=size(radii);
 %     if(siz(1) > 1)
 %         disp('Detect more than one circles');
@@ -91,11 +99,13 @@ for i = 0:1:totalNumber
 %         break;
 %     end
     
-    if(size(radii) ~= 1)
+    if(siz(1) ~= 1)
         
         numCircledFailuer = numCircledFailuer + 1;
-        filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
-        
+%         filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
+%         filename_out = strcat(outDir,num2str(currentDate),'_ndl',...
+%         num2str(currentNdl),'_ht',...
+%         num2str(currentHight),'_r',num2str(currentRun),'Circled',ext_out);
         stats = regionprops('table',BW,'Centroid',...
             'MajorAxisLength','MinorAxisLength','Orientation');
         centers = stats.Centroid;
@@ -105,7 +115,7 @@ for i = 0:1:totalNumber
         orientation = stats.Orientation(1);
         
         fid = fopen(filename_out,'w');
-        fprintf(fid, '%8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[centers(1);centers(2); majorAxisLength;...
+        fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii;centers(1);centers(2); majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
     
@@ -122,7 +132,7 @@ for i = 0:1:totalNumber
     hold off
 
     fid = fopen(filename_out,'w');
-    fprintf(fid, '%8.2f \t %8.2f \t %8.2f\n',[centers(1);centers(2); radii]); %relative to flat surface
+    fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f\n',[ii;centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
 end
 
