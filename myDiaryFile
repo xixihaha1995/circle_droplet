@@ -851,3 +851,904 @@ reference image (ref_index =?):  -804
 last image before impacting (LastIm =?):  -796
 Total 8 images have been processed, 7 have been circled, 1 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            4           14           57       27.901
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -861
+last image before impacting (LastIm =?):  -857
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',77,1)">77  </a>    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+ii
+
+ii =
+
+  -858
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',121,1)">121 </a>    viscircles(centers,radii);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Total 4 images have been processed, 2 have been circled, 2 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            4           14           58       38.605
+
+currentNdl: -861
+currentHight:  00
+currentRun:  00
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl-861_hgt0_r0\ndl-861_ht0_r0_
+reference image (ref_index =?):  00
+last image before impacting (LastIm =?):  00
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl-861_hgt0_r0\ndl-861_ht0_r0_00000.bmp.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.', fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 42)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',42,0)">line 42</a>)
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp');
+} 
+circle_Wu_20200302
+         2020            3            4           14           58         51.1
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -861
+last image before impacting (LastIm =?):  -857
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',77,1)">77  </a>    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',121,1)">121 </a>    viscircles(centers,radii);
+ii
+
+ii =
+
+  -858
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           15            0
+
+  Column 6
+
+        8.483
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -861
+last image before impacting (LastIm =?):  -857
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',77,1)">77  </a>    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+if system_dependent('IsDebugMode')==1, dbstep; end
+siz
+
+siz =
+
+     2     1
+
+ii
+
+ii =
+
+  -860
+
+figure(1);
+imshow(a);
+hold on
+    viscircles(centers,radii);
+    viscircles(centers,radii);
+if system_dependent('IsDebugMode')==1, dbquit; end
+circle_Wu_20200302
+         2020            3            4           15            5       28.969
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+{Error: <a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',9,14)">File: circle_Wu_20200302.m Line: 9 Column: 14
+</a>Invalid expression. Check for missing or extra characters.
+} 
+circle_Wu_20200302
+{Error: <a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',9,15)">File: circle_Wu_20200302.m Line: 9 Column: 15
+</a>Invalid expression. Check for missing or extra characters.
+} 
+oop = NAN
+{Unrecognized function or variable 'NAN'.
+} 
+oop = nan
+
+oop =
+
+   NaN
+
+disp(oop0
+ disp(oop0
+          
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+disp(oop)
+   NaN
+
+circle_Wu_20200302
+         2020            3            4           15           22       28.079
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            4           15           26       41.516
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 134)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',134,0)">line 134</a>)
+    fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f\n',[ii,centers(1);centers(2); radii]); %relative to flat surface
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',134,0)
+circle_Wu_20200302
+         2020            3            4           15           28        7.581
+
+currentNdl: 18
+currentHight:  1
+currentRun:  000.
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r0\ndl18_ht1_r0_
+reference image (ref_index =?):  0
+last image before impacting (LastIm =?):  0
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r0\ndl18_ht1_r0_00000.bmp.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.', fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 47)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',47,0)">line 47</a>)
+FirstIm = ref_index + 1;
+} 
+circle_Wu_20200302
+         2020            3            4           15           29       21.914
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 135)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',135,0)">line 135</a>)
+    fprintf(fid, '%8.2f \t %8.2f \t %8.2f \t %8.2f\n',[ii,centers(1);centers(2); radii]); %relative to flat surface
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',135,0)
+class(ii)
+
+ans =
+
+    'double'
+
+class(radii)
+
+ans =
+
+    'double'
+
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           15           31
+
+  Column 6
+
+       34.317
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('vertcat')" style="font-weight:bold">vertcat</a>
+Dimensions of arrays being concatenated are not consistent.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 135)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',135,0)">line 135</a>)
+    fprintf(fid, '%f \t %8.2f \t %8.2f \t
+    %8.2f\n',[ii,centers(1);centers(2); radii]); %relative to flat
+    surface
+} 
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           15           32
+
+  Column 6
+
+       10.604
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',135,1)">135 </a>    fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f\n',[ii;centers(1);centers(2); radii]); %relative to flat surface
+if system_dependent('IsDebugMode')==1, dbquit; end
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           15           32
+
+  Column 6
+
+       28.564
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+imshow(BW)
+circle_Wu_20200302
+         2020            3            4           15           54        2.803
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            4           15           56       36.784
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+imshow(BW)
+[B, L]=bwboundaries(BW,'noholes');
+    boundary_size = zeros(1, length(B));
+    [K_M, K_I]=sort(boundary_size, 'descend');
+boundary =B{K_I(1)};
+plot(boundary(:,2), boundary(:,1),'r');
+imshow(a);
+hold on
+plot(boundary(:,2), boundary(:,1),'r');
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16            9
+
+  Column 6
+
+        2.882
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+cenXX = mean(boundary(:,2))
+
+cenXX =
+
+       1292.1
+
+cenYY = mean(boundary(:,1))
+
+cenYY =
+
+       1039.2
+
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           23
+
+  Column 6
+
+        6.068
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1086.9
+
+
+x2 =
+
+       1077.1
+
+Save the values of x1 and x2 in this program for our record.... !
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           25
+
+  Column 6
+
+        22.04
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1088.2
+
+       1077.1
+
+Save the values of x1 and x2 in this program for our record.... !
+Total 8 images have been processed, 8 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           25
+
+  Column 6
+
+       49.467
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1083.3
+
+       1079.6
+
+Save the values of x1 and x2 in this program for our record.... !
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',114,1)">114 </a>    cenYY = mean(boundary(:,1));
+plot(boundary(:,2), boundary(:,1),'r');
+size(B)
+
+ans =
+
+     7     1
+
+cenXX
+
+cenXX =
+
+   348
+
+cenYY
+
+cenYY =
+
+       1039.2
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+cenYY
+
+cenYY =
+
+   630
+
+figure(1)
+imshow(a)
+hold on
+    plot(boundary(:,2), boundary(:,1),'r');
+size(boundary)
+
+ans =
+
+     2     2
+
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+size(boundary)
+
+ans =
+
+   231     2
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           30
+
+  Column 6
+
+       32.981
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1088.2
+
+       1078.3
+
+Save the values of x1 and x2 in this program for our record.... !
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',114,1)">114 </a>    cenYY = mean(boundary(:,1));
+if system_dependent('IsDebugMode')==1, dbquit all; end
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           33
+
+  Column 6
+
+       29.827
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1085.7
+
+       1078.3
+
+Save the values of x1 and x2 in this program for our record.... !
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',124,1)">124 </a>    cenYY = mean(boundary(:,1));
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',124,1)">124 </a>    cenYY = mean(boundary(:,1));
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Total 8 images have been processed, 8 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           37
+
+  Column 6
+
+        6.002
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1085.7
+
+       1078.3
+
+Save the values of x1 and x2 in this program for our record.... !
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 129)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',129,0)">line 129</a>)
+Could not find a single circle
+} 
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16           41
+
+  Column 6
+
+       25.044
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1085.7
+
+       1078.3
+
+Save the values of x1 and x2 in this program for our record.... !
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 131)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',131,0)">line 131</a>)
+Could not find a single circle
+} 
+circle_Wu_20200302
+         2020            3            4           16           42        9.336
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1088.2
+
+       1075.9
+
+Save the values of x1 and x2 in this program for our record.... !
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            4           16           52       32.167
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1085.7
+
+       1075.9
+
+Save the values of x1 and x2 in this program for our record.... !
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('alpha')" style="font-weight:bold">alpha</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 137)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',137,0)">line 137</a>)
+    profile_x = (y_temp-x1).*sin(alpha)+(x_temp-y1).*cos(alpha);
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',137,0)
+I_min
+
+I_min =
+
+     1
+
+(profl(:,2))
+
+ans =
+
+        1249
+        1250
+        1251
+        1250
+        1250
+        1251
+        1252
+        1252
+        1252
+        1253
+        1253
+        1253
+        1254
+        1254
+        1255
+        1256
+        1257
+        1258
+        1258
+        1258
+        1259
+        1260
+        1261
+        1261
+        1262
+        1263
+        1264
+        1265
+        1266
+        1266
+        1267
+        1268
+        1269
+        1269
+        1270
+        1271
+        1272
+        1273
+        1274
+        1274
+        1275
+        1276
+        1277
+        1278
+        1279
+        1280
+        1281
+        1282
+        1283
+        1284
+        1285
+        1286
+        1287
+        1288
+        1289
+        1290
+        1291
+        1292
+        1293
+        1294
+        1295
+        1296
+        1297
+        1298
+        1299
+        1300
+        1301
+        1302
+        1303
+        1304
+        1305
+        1306
+        1307
+        1308
+        1309
+        1310
+        1311
+        1312
+        1313
+        1314
+        1315
+        1316
+        1317
+        1317
+        1318
+        1319
+        1319
+        1320
+        1321
+        1321
+        1321
+        1322
+        1323
+        1323
+        1324
+        1324
+        1325
+        1326
+        1325
+        1326
+        1327
+        1326
+        1326
+        1327
+        1327
+        1327
+        1328
+        1327
+        1327
+        1328
+        1327
+        1327
+        1327
+        1327
+        1327
+        1327
+        1327
+        1327
+        1327
+        1327
+        1326
+        1326
+        1326
+        1325
+        1325
+        1324
+        1324
+        1323
+        1323
+        1322
+        1321
+        1321
+        1320
+        1319
+        1318
+        1318
+        1317
+        1316
+        1316
+        1315
+        1314
+        1313
+        1312
+        1311
+        1310
+        1309
+        1308
+        1307
+        1306
+        1305
+        1304
+        1303
+        1302
+        1301
+        1300
+        1299
+        1298
+        1297
+        1296
+        1295
+        1294
+        1293
+        1292
+        1291
+        1290
+        1289
+        1288
+        1287
+        1286
+        1285
+        1284
+        1283
+        1282
+        1281
+        1280
+        1279
+        1278
+        1277
+        1276
+        1275
+        1274
+        1273
+        1272
+        1271
+        1270
+        1269
+        1268
+        1267
+        1266
+        1265
+        1264
+        1263
+        1262
+        1261
+        1260
+        1260
+        1259
+        1258
+        1257
+        1257
+        1257
+        1256
+        1255
+        1255
+        1254
+        1253
+        1253
+        1252
+        1252
+        1252
+        1251
+        1250
+        1250
+        1250
+        1250
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1249
+        1250
+        1249
+        1249
+        1249
+
+circle_Wu_20200302
+         2020            3            4           17            4       36.008
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+       1085.7
+
+       1079.6
+
+Save the values of x1 and x2 in this program for our record.... !
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            4           17            8       11.427
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
