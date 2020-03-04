@@ -81,6 +81,13 @@ for i = 0:1:totalNumber
         disp('Detect more than one circles');
         disp('current image');
         disp(ii);
+        
+        figure(1);
+        imshow(a);
+        hold on
+        viscircles(centers,radii);
+        hold off
+        
         break;
     end
     
