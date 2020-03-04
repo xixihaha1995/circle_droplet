@@ -14,6 +14,8 @@ currentHight = input('currentHight:  ');
 currentRun = input('currentRun:  ');
 
 outDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\';
+ext = '.bmp';
+ext_out = '.txt';
 
 filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
     num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
@@ -39,8 +41,7 @@ disp(prefix);
 
 
 
-ext = '.bmp';
-ext_out = '.txt';
+
 
 
 ref_index = input('reference image (ref_index =?):  ');
@@ -114,7 +115,7 @@ for i = 0:1:totalNumber
         minorAxisLength =stats.MinorAxisLength(1);
         orientation = stats.Orientation(1);
         
-        fid = fopen(filename_out,'w');
+        fid = fopen(filename_out,'a');
         fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii;centers(1);centers(2); majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
@@ -131,7 +132,7 @@ for i = 0:1:totalNumber
     viscircles(centers,radii);
     hold off
 
-    fid = fopen(filename_out,'w');
+    fid = fopen(filename_out,'a');
     fprintf(fid, '%f \t %8.2f \t %8.2f \t %8.2f\n',[ii;centers(1);centers(2); radii]); %relative to flat surface
     fclose(fid);
 end
