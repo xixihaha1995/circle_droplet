@@ -73,7 +73,7 @@ for i = 0:1:totalNumber
 %     disp('The present image number: ');
 %     disp(ii);
     filename = strcat(prefix, num2str(ii, '%05g'),ext);
-%     [a, map] = imread(filename);
+
     a = imread(filename);
 
     a0 =ref_a-a; %subtract the background
@@ -81,32 +81,28 @@ for i = 0:1:totalNumber
     a1 = imadjust(a0, [0.01 a0_max], [0 1]); %for a better contrast
     BW = a0>max(max(a0))/5; %another way to convert into BW 
 
+    [B, L]=bwboundaries(BW,'noholes');
+    boundary_size = zeros(1, length(B));
+    [K_M, K_I]=sort(boundary_size, 'descend');
+    boundary = B{K_I(1)};
+    figure(1);
+    imshow(a);
+    hold on;
+    plot(boundary(:,2), boundary(:,1),'r');
+    hold off;
+    cenXX = mean(boundary(:,2));
+    cenYY = mean(boundary(:,1));
+
     
     [centers,radii] = imfindcircles(BW,[38 65],'ObjectPolarity','bright');
 %     filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
 
     siz=size(radii);
-%     if(siz(1) > 1)
-%         disp('Detect more than one circles');
-%         disp('current image');
-%         disp(ii);
-%         
-%         figure(1);
-%         imshow(a);
-%         hold on
-%         viscircles(centers,radii);
-%         hold off
-%         
-%         break;
-%     end
-    
+
     if(siz(1) ~= 1)
         
         numCircledFailuer = numCircledFailuer + 1;
-%         filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
-%         filename_out = strcat(outDir,num2str(currentDate),'_ndl',...
-%         num2str(currentNdl),'_ht',...
-%         num2str(currentHight),'_r',num2str(currentRun),'Circled',ext_out);
+        
         stats = regionprops('table',BW,'Centroid',...
             'MajorAxisLength','MinorAxisLength','Orientation');
         centers = stats.Centroid;
@@ -126,7 +122,7 @@ for i = 0:1:totalNumber
     
 
     
-    figure(1);
+    figure(2);
     imshow(a);
     hold on
     viscircles(centers,radii);

@@ -1130,3 +1130,40 @@ reference image (ref_index =?):  -865
 last image before impacting (LastIm =?):  -857
 Total 8 images have been processed, 5 have been circled, 3 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            4           15           56       36.784
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+imshow(BW)
+[B, L]=bwboundaries(BW,'noholes');
+    boundary_size = zeros(1, length(B));
+    [K_M, K_I]=sort(boundary_size, 'descend');
+boundary =B{K_I(1)};
+plot(boundary(:,2), boundary(:,1),'r');
+imshow(a);
+hold on
+plot(boundary(:,2), boundary(:,1),'r');
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           16            9
+
+  Column 6
+
+        2.882
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -865
+last image before impacting (LastIm =?):  -857
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
