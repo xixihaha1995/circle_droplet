@@ -851,3 +851,30 @@ reference image (ref_index =?):  -804
 last image before impacting (LastIm =?):  -796
 Total 8 images have been processed, 7 have been circled, 1 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            4           14           57       27.901
+
+currentNdl: 18
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r2\ndl18_ht1_r2_
+reference image (ref_index =?):  -861
+last image before impacting (LastIm =?):  -857
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',77,1)">77  </a>    filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+ii
+
+ii =
+
+  -858
+
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',121,1)">121 </a>    viscircles(centers,radii);
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+Total 4 images have been processed, 2 have been circled, 2 have been centroided.
+------

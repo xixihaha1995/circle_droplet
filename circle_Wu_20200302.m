@@ -77,21 +77,21 @@ for i = 0:1:totalNumber
     filename_out = strcat(prefix,'Circled',num2str(ii, '%05g'),ext_out);
     
     siz=size(radii);
-    if(siz(1) > 1)
-        disp('Detect more than one circles');
-        disp('current image');
-        disp(ii);
-        
-        figure(1);
-        imshow(a);
-        hold on
-        viscircles(centers,radii);
-        hold off
-        
-        break;
-    end
+%     if(siz(1) > 1)
+%         disp('Detect more than one circles');
+%         disp('current image');
+%         disp(ii);
+%         
+%         figure(1);
+%         imshow(a);
+%         hold on
+%         viscircles(centers,radii);
+%         hold off
+%         
+%         break;
+%     end
     
-    if(size(radii) == 0)
+    if(size(radii) ~= 1)
         
         numCircledFailuer = numCircledFailuer + 1;
         filename_out = strcat(prefix,'Centroided',num2str(ii, '%05g'),ext_out);
