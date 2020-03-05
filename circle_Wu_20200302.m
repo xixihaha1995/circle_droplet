@@ -51,6 +51,24 @@ totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
 
+Impact_location = 1225; 
+y2 = Impact_location+500;
+y1 = Impact_location-500;
+
+figure(1);
+plot(smooth(double((ref_a(:, Impact_location-500)))),'r');
+hold on
+plot(smooth(double((ref_a(:, Impact_location+500)))), 'g');
+hold off
+disp('Stretch figure 1 horizontally for a better resolution..... ')
+disp('Click on the middle pick in red line once: ?')
+[x1,y1g] = ginput(1);
+disp(' ... ')
+disp('Click on the middle pick in green line once: ?')
+[x2,y2g] = ginput(1);
+x1
+x2
+level = min(x1,x2);
 
 numCircledFailuer = 0;
 
@@ -62,12 +80,12 @@ for i = 0:1:totalNumber
         ii = FirstIm + i;
     end
     
-    
+
     if(ii == LastIm + 1)
-        fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
-            totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
-        disp('------');
-        diary myDiaryFile
+%         fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
+%             totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
+%         disp('------');
+%         diary myDiaryFile
         break;
     end
     
@@ -107,6 +125,12 @@ for i = 0:1:totalNumber
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
     
+    if cenYY > level - 50
+        msg = 'droplet might have contact the surface';
+        disp(msg)
+        break
+    end
+    
     [centers,radii] = imfindcircles(BW,[38 65],'ObjectPolarity','bright');
     siz=size(radii);
     
@@ -145,15 +169,33 @@ end
 fileID = fopen(filename_out);
 C = textscan(fileID, '%d %f %f %f %f %d');
 
+fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
+    totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
+disp('------');
+diary circleDiaryFile
+
 if (mean(C{2})>1600 || mean(C{2})<900)
     msg='locations of droplet are wrong';
+    disp(msg)
+    disp('------');
+    diary circleDiaryFile
     error(msg)
 elseif (min(C{4})<30)
     msg='radius of droplet are too small';
+    disp(msg)
+    disp('------');
+    diary circleDiaryFile
     error(msg)
 elseif (max(C{4})>115)
     msg='radius of droplet are too big';
+    disp(msg)
+    disp('------');
+    diary circleDiaryFile
     error(msg)
 end
+
+
+
+
 
 

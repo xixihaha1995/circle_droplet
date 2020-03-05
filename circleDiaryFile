@@ -1,0 +1,229 @@
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3            4           18           12
+
+  Column 6
+
+       55.586
+
+currentNdl: 14
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt1_r2\ndl14_ht1_r2_
+reference image (ref_index =?):  -676
+last image before impacting (LastIm =?):  -669
+Total 7 images have been processed, 3 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           12           14       35.784
+
+currentNdl: 14
+currentHight:  1
+currentRun:  4
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt1_r4\ndl14_ht1_r4_
+reference image (ref_index =?):  -789
+last image before impacting (LastIm =?):  -781
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 156)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',156,0)">line 156</a>)
+radius of droplet are too big
+} 
+circle_Wu_20200302
+         2020            3            5           12           19       13.777
+
+currentNdl: 14
+currentHight:  2
+currentRun:  4
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt2_r4\ndl14_ht2_r4_
+reference image (ref_index =?):  -852
+last image before impacting (LastIm =?):  -842
+Total 10 images have been processed, 7 have been circled, 3 have been centroided.
+------
+radius of droplet are too big
+------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 170)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',170,0)">line 170</a>)
+radius of droplet are too big
+} 
+circle_Wu_20200302
+         2020            3            5           12           26       10.043
+
+currentNdl: {Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 12)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',12,0)">line 12</a>)
+} 
+radius of droplet are too big
+------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 170)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',170,0)">line 170</a>)
+radius of droplet are too big
+} 
+circle_Wu_20200302
+         2020            3            5           12           29       40.693
+
+currentNdl: 14
+currentHight:  2
+currentRun:  5
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt2_r5\ndl14_ht2_r5_
+reference image (ref_index =?):  -874
+last image before impacting (LastIm =?):  -865
+Total 9 images have been processed, 7 have been circled, 2 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           12           31       24.706
+
+currentNdl: 14
+currentHight:  2
+currentRun:  6
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt2_r6\ndl14_ht2_r6_
+reference image (ref_index =?):  -735
+last image before impacting (LastIm =?):  -727
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           12           33       36.058
+
+currentNdl: 14
+currentHight:  3
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt3_r1\ndl14_ht3_r1_
+reference image (ref_index =?):  -940
+last image before impacting (LastIm =?):  -930
+Total 10 images have been processed, 6 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           12           35        0.526
+
+currentNdl: 14
+currentHight:  3
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt3_r2\ndl14_ht3_r2_
+reference image (ref_index =?):  -884
+last image before impacting (LastIm =?):  -875
+Total 9 images have been processed, 4 have been circled, 5 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           12           39       10.439
+
+currentNdl: 14
+currentHight:  4
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r1\ndl14_ht4_r1_
+reference image (ref_index =?):  -876
+last image before impacting (LastIm =?):  -865
+Total 11 images have been processed, 11 have been circled, 0 have been centroided.
+------
+min(boundary(:,1))
+
+ans =
+
+   909
+
+circle_Wu_20200302
+         2020            3            5           12           54       23.473
+
+currentNdl: 14
+currentHight:  4
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r2\ndl14_ht4_r2_
+reference image (ref_index =?):  -949
+last image before impacting (LastIm =?):  -937
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1086.9
+
+
+x2 =
+
+       1083.3
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sum')" style="font-weight:bold">sum</a>
+Dimension argument must be a positive integer scalar, a vector of unique positive integers, or 'all'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mean', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\datafun\mean.m', 127)" style="font-weight:bold">mean</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\datafun\mean.m',127,0)">line 127</a>)
+        y = sum(x, dim, flag) ./ mysize(x,dim);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 71)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',71,0)">line 71</a>)
+level = mean(x1,x2);
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',71,0)
+min(x1,x2)
+
+ans =
+
+       1083.3
+
+circle_Wu_20200302
+         2020            3            5           12           57       16.728
+
+currentNdl: 14
+currentHight:  4
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r2\ndl14_ht4_r2_
+reference image (ref_index =?):  -949
+last image before impacting (LastIm =?):  -937
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1086.9
+
+
+x2 =
+
+       1083.3
+
+Total 12 images have been processed, 8 have been circled, 4 have been centroided.
+------
+radius of droplet are too big
+------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 194)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',194,0)">line 194</a>)
+radius of droplet are too big
+} 
+circle_Wu_20200302
+         2020            3            5           12           58        3.291
+
+currentNdl: 
+currentHight:  
+currentRun:  
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl_hgt_r\ndl_ht_r_
+reference image (ref_index =?):  
+last image before impacting (LastIm =?):  
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl_hgt_r\ndl_ht_r_.bmp.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.', fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 51)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',51,0)">line 51</a>)
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp');
+} 
+level
+
+level =
+
+       1083.3
+
+min(boundary(:,1))
+
+ans =
+
+        1020
+
+min(boundary(:,1)) > level - 1000
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+cenYY
+
+cenYY =
+
+       1062.2
+
