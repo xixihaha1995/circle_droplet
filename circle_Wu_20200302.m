@@ -19,8 +19,9 @@ levelDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\';
 ext = '.bmp';
 ext_out = '.txt';
 
-filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
-    num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
+% filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
+%     num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
+filename_out = strcat(outDir,'circled',ext_out);
 
 level_out = strcat(levelDir,'level',ext_out);
 disp(level_out);
@@ -162,7 +163,8 @@ for i = 0:1:totalNumber
         orientation = stats.Orientation(1);
         
         fid = fopen(filename_out,'a');
-        fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii; cenXX; cenYY; majorAxisLength;...
+        fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',...
+            [currentDate;currentNdl;currentHight;currentRun;ii; cenXX; cenYY; majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
     
@@ -173,7 +175,8 @@ for i = 0:1:totalNumber
     
 
     fid = fopen(filename_out,'a');
-    fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f\n',[ii;cenXX; cenYY;radii]); %relative to flat surface
+    fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f\n',...
+        [currentDate;currentNdl;currentHight;currentRun;ii;cenXX; cenYY;radii]); %relative to flat surface
     fclose(fid);
 end
 
@@ -185,19 +188,19 @@ fprintf('Total %d images have been processed, %d have been circled, %d have been
 disp('------');
 diary circleDiaryFile
 
-if (mean(C{2})>1600 || mean(C{2})<900)
+if (mean(C{6})>1600 || mean(C{6})<900)
     msg='locations of droplet are wrong';
     disp(msg)
     disp('------');
     diary circleDiaryFile
     error(msg)
-elseif (min(C{4})<30)
+elseif (min(C{8})<30)
     msg='radius of droplet are too small';
     disp(msg)
     disp('------');
     diary circleDiaryFile
     error(msg)
-elseif (max(C{4})>115)
+elseif (max(C{8})>115)
     msg='radius of droplet are too big';
     disp(msg)
     disp('------');
