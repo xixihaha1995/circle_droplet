@@ -14,11 +14,17 @@ currentHight = input('currentHight:  ');
 currentRun = input('currentRun:  ');
 
 outDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\';
+levelDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\';
+
 ext = '.bmp';
 ext_out = '.txt';
 
-filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
-    num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
+% filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
+%     num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
+filename_out = strcat(outDir,'circled',ext_out);
+
+level_out = strcat(levelDir,'level',ext_out);
+% disp(level_out);
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
 prefix_10 = num2str(currentNdl);
@@ -46,9 +52,34 @@ disp(prefix);
 
 ref_index = input('reference image (ref_index =?):  ');
 FirstIm = ref_index + 1;
-LastIm = input('last image before impacting (LastIm =?):  ');
+% LastIm = input('last image before impacting (LastIm =?):  ');
+LastIm = FirstIm + 30;
 totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
+
+
+Impact_location = 1225; 
+y2 = Impact_location+500;
+y1 = Impact_location-500;
+
+figure(1);
+plot(smooth(double((ref_a(:, Impact_location-500)))),'r');
+hold on
+plot(smooth(double((ref_a(:, Impact_location+500)))), 'g');
+hold off
+disp('Stretch figure 1 horizontally for a better resolution..... ')
+disp('Click on the middle pick in red line once: ?')
+[x1,y1g] = ginput(1);
+disp(' ... ')
+disp('Click on the middle pick in green line once: ?')
+[x2,y2g] = ginput(1);
+
+level = (x1 + x2)/2;
+
+fid = fopen(level_out,'a');
+fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %d \t %d \t %d \t %d \t %d \t %d \t %8.2f\n',...
+    [currentDate;currentNdl;currentHight;currentRun;c(1);c(2);c(3);c(4);c(5);c(6);x1;x2]); 
+fclose(fid);
 
 
 
@@ -62,12 +93,8 @@ for i = 0:1:totalNumber
         ii = FirstIm + i;
     end
     
-    
+
     if(ii == LastIm + 1)
-        fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
-            totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
-        disp('------');
-        diary myDiaryFile
         break;
     end
     
@@ -107,6 +134,18 @@ for i = 0:1:totalNumber
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
     
+    if (cenXX >1600 || cenXX <900)
+    msg='locations of droplet are wrong';
+    error(msg)
+    end
+    
+    if  max(boundary(:,1))> level
+        fprintf('Droplet from image %d might have contacted the surface\n', ii);
+        LastIm = ii -1;
+        totalNumber = LastIm - FirstIm + 1 ;
+        break
+    end
+    
     [centers,radii] = imfindcircles(BW,[38 65],'ObjectPolarity','bright');
     siz=size(radii);
     
@@ -127,33 +166,43 @@ for i = 0:1:totalNumber
         orientation = stats.Orientation(1);
         
         fid = fopen(filename_out,'a');
-        fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',[ii; cenXX; cenYY; majorAxisLength;...
+        fprintf(fid, '%d \t %d \t %d \t %d \t  %d \t  %d \t  %d \t  %d \t  %d \t  %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',...
+            [currentDate;currentNdl;currentHight;currentRun;c(1);c(2);c(3);c(4);c(5);c(6);ii; cenXX; cenYY; majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
-    
+        
         continue
-
         
     end
     
+    if (radii<30)
+        msg='radius of droplet are too small';
+        error(msg)
+    elseif (radii>115)
+        msg='radius of droplet are too big';
+        error(msg)
+    end
+
+    
 
     fid = fopen(filename_out,'a');
-    fprintf(fid, '%d \t %8.2f \t %8.2f \t %8.2f\n',[ii;cenXX; cenYY;radii]); %relative to flat surface
+    fprintf(fid, '%d \t %d \t %d \t %d \t %d \t  %d \t  %d \t  %d \t  %d \t  %d \t %d \t %8.2f \t %8.2f \t %8.2f\n',...
+        [currentDate;currentNdl;currentHight;currentRun;c(1);c(2);c(3);c(4);c(5);c(6);ii;cenXX; cenYY;radii]); %relative to flat surface
     fclose(fid);
 end
 
-fileID = fopen(filename_out);
-C = textscan(fileID, '%d %f %f %f %f %d');
+% fileID = fopen(filename_out);
+% C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t  %d \t  %d \t  %d \t  %d \t  %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
 
-if (mean(C{2})>1600 || mean(C{2})<900)
-    msg='locations of droplet are wrong';
-    error(msg)
-elseif (min(C{4})<30)
-    msg='radius of droplet are too small';
-    error(msg)
-elseif (max(C{4})>115)
-    msg='radius of droplet are too big';
-    error(msg)
-end
+fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
+    totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
+disp('------');
+diary circleDiaryFile
+
+
+
+
+
+
 
 
