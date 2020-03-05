@@ -68,7 +68,7 @@ disp('Click on the middle pick in green line once: ?')
 [x2,y2g] = ginput(1);
 x1
 x2
-level = min(x1,x2);
+level = (x1 + x2)/2;
 
 numCircledFailuer = 0;
 
@@ -125,7 +125,7 @@ for i = 0:1:totalNumber
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
     
-    if cenYY > level - 50
+    if cenYY > level - 38
         msg = 'droplet might have contact the surface';
         disp(msg)
         break
