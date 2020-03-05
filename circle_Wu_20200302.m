@@ -77,7 +77,7 @@ disp('Click on the middle pick in green line once: ?')
 level = (x1 + x2)/2;
 
 fid = fopen(level_out,'a');
-fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]); 
+fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %d \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;clock;x1;x2]); 
 fclose(fid);
 
 
@@ -137,8 +137,13 @@ for i = 0:1:totalNumber
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
     
-    if cenYY > level - 38
-        fprintf('Droplet from image %d might have contact the surface\n', ii);
+    if (cenXX >1600 || cenXX <900)
+    msg='locations of droplet are wrong';
+    error(msg)
+    end
+    
+    if  max(boundary(:,1)> level 
+        fprintf('Droplet from image %d might have contacted the surface\n', ii);
         LastIm = ii -1;
         totalNumber = LastIm - FirstIm + 1 ;
         break
@@ -164,50 +169,58 @@ for i = 0:1:totalNumber
         orientation = stats.Orientation(1);
         
         fid = fopen(filename_out,'a');
-        fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',...
-            [currentDate;currentNdl;currentHight;currentRun;ii; cenXX; cenYY; majorAxisLength;...
+        fprintf(fid, '%d \t %d \t %d \t %d \t  %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d\n',...
+            [currentDate;currentNdl;currentHight;currentRun;clock;ii; cenXX; cenYY; majorAxisLength;...
             minorAxisLength; orientation]); 
         fclose(fid);
-    
+        
         continue
-
         
     end
     
+    if (radii<30)
+        msg='radius of droplet are too small';
+        error(msg)
+    elseif (radii>115)
+        msg='radius of droplet are too big';
+        error(msg)
+    end
+
+    
 
     fid = fopen(filename_out,'a');
-    fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f\n',...
-        [currentDate;currentNdl;currentHight;currentRun;ii;cenXX; cenYY;radii]); %relative to flat surface
+    fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f\n',...
+        [currentDate;currentNdl;currentHight;currentRun;clock;ii;cenXX; cenYY;radii]); %relative to flat surface
     fclose(fid);
 end
 
 fileID = fopen(filename_out);
-C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
+C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
 
 fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
     totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
 disp('------');
 diary circleDiaryFile
 
-if (mean(C{6})>1600 || mean(C{6})<900)
-    msg='locations of droplet are wrong';
-    disp(msg)
-    disp('------');
-    diary circleDiaryFile
-    error(msg)
-elseif (min(C{8})<30)
-    msg='radius of droplet are too small';
-    disp(msg)
-    disp('------');
-    diary circleDiaryFile
-    error(msg)
-elseif (max(C{8})>115)
-    msg='radius of droplet are too big';
-    disp(msg)
-    disp('------');
-    diary circleDiaryFile
-    error(msg)
-end
+% if (mean(C{6})>1600 || mean(C{6})<900)
+%     msg='locations of droplet are wrong';
+%     disp(msg)
+%     disp('------');
+%     diary circleDiaryFile
+%     error(msg)
+% elseif (min(C{8})<30)
+%     msg='radius of droplet are too small';
+%     disp(msg)
+%     disp('------');
+%     diary circleDiaryFile
+%     error(msg)
+% elseif (max(C{8})>115)
+%     msg='radius of droplet are too big';
+%     disp(msg)
+%     disp('------');
+%     diary circleDiaryFile
+%     error(msg)
+% end
 
 
 

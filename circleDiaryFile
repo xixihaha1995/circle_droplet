@@ -682,3 +682,81 @@ Click on the middle pick in green line once: ?
 Droplet from image -1138 might have contact the surface
 Total 19 images have been processed, 14 have been circled, 5 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3            5           15           43       57.426
+
+currentNdl: 14
+currentHight:  6
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt6_r3\ndl14_ht6_r3_
+reference image (ref_index =?):  -2402
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -2381 might have contacted the surface
+Total 20 images have been processed, 16 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           15           51       47.889
+
+currentNdl: 18
+currentHight:  0
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r1\ndl18_ht0_r1_
+reference image (ref_index =?):  -701
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -694 might have contacted the surface
+Total 6 images have been processed, 6 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           15           55       22.166
+
+currentNdl: 18
+currentHight:  0
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r2\ndl18_ht0_r2_
+reference image (ref_index =?):  -850
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -842 might have contacted the surface
+Total 7 images have been processed, 7 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           15           58        6.383
+
+currentNdl: 18
+currentHight:  3
+currentRun:  000
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt3_r0\ndl18_ht3_r0_
+reference image (ref_index =?):  0
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt3_r0\ndl18_ht3_r0_00000.bmp.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 409)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',409,0)">line 409</a>)
+                fullname = get_full_filename([filename, '.', fmt_s.ext{p}]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 58)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',58,0)">line 58</a>)
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp');
+} 
+circle_Wu_20200302
+         2020            3            5           15           59       36.948
+
+currentNdl: 18
+currentHight:  0
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt0_r3\ndl18_ht0_r3_
+reference image (ref_index =?):  -1048
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Total 31 images have been processed, 9 have been circled, 22 have been centroided.
+------
+radius of droplet are too big
+------
