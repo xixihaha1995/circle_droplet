@@ -14,11 +14,16 @@ currentHight = input('currentHight:  ');
 currentRun = input('currentRun:  ');
 
 outDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\';
+levelDir = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\';
+
 ext = '.bmp';
 ext_out = '.txt';
 
 filename_out = strcat(outDir,num2str(currentDate),'_ndl',num2str(currentNdl),'_ht',...
     num2str(currentHight),'_r',num2str(currentRun),'_Circled',ext_out);
+
+level_out = strcat(levelDir,'level',ext_out);
+disp(level_out);
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
 prefix_10 = num2str(currentNdl);
@@ -70,6 +75,10 @@ disp('Click on the middle pick in green line once: ?')
 x1
 x2
 level = (x1 + x2)/2;
+
+fid = fopen(level_out,'a');
+fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]); 
+fclose(fid);
 
 numCircledFailuer = 0;
 
@@ -128,6 +137,8 @@ for i = 0:1:totalNumber
     
     if cenYY > level - 38
         fprintf('Droplet from image %d might have contact the surface\n', ii);
+        LastIm = ii -1;
+        totalNumber = LastIm - FirstIm + 1 ;
         break
     end
     

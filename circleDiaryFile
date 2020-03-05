@@ -272,3 +272,100 @@ x2 =
 
 Droplet from image -842 might have contact the surfaceTotal 31 images have been processed, 28 have been circled, 3 have been centroided.
 ------
+filename_out
+
+filename_out =
+
+    'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\20200107_ndl14_ht4_r3_Circled.txt'
+
+circle_Wu_20200302
+         2020            3            5           14           21       54.261
+
+currentNdl: 14
+currentHight:  5
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_circled\level.txt
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r1\ndl14_ht5_r1_
+reference image (ref_index =?):  -860
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1086.9
+
+
+x2 =
+
+         1082
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fprintf')" style="font-weight:bold">fprintf</a>
+Invalid file identifier. Use fopen to generate a valid file identifier.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 80)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',80,0)">line 80</a>)
+fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]);
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',80,0)
+circle_Wu_20200302
+         2020            3            5           14           23       17.847
+
+currentNdl: 14
+currentHight:  5
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\level.txt
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r1\ndl14_ht5_r1_
+reference image (ref_index =?):  -860
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1085.7
+
+
+x2 =
+
+       1080.8
+
+Droplet from image -846 might have contact the surface
+Total 31 images have been processed, 31 have been circled, 0 have been centroided.
+------
+fprintf('%d \t %d \t %d \t %d \t %d \t %d \t %d\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]); 
+20200107 	 14 	 5 	 1 	 1.085714e+03 	 1.080799e+03 	 class(x1)
+
+ans =
+
+    'double'
+
+fprintf('%d \t %d \t %d \t %d \t %d \t %.2d \t %.2d\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]);
+20200107 	 14 	 5 	 1 	 1.085714e+03 	 1.08e+03 	 fprintf('%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]);
+20200107 	 14 	 5 	 1 	 1.085714e+03 	  1080.80 	 circle_Wu_20200302
+         2020            3            5           14           32         4.71
+
+currentNdl: 14
+currentHight:  5
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\level.txt
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r2\ndl14_ht5_r2_
+reference image (ref_index =?):  -972
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1090.6
+
+
+x2 =
+
+         1082
+
+Droplet from image -958 might have contact the surface
+Total 31 images have been processed, 31 have been circled, 0 have been centroided.
+------
