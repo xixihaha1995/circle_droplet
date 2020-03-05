@@ -371,3 +371,314 @@ Total 31 images have been processed, 31 have been circled, 0 have been centroide
 ------
 locations of droplet are wrong
 ------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 196)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',196,0)">line 196</a>)
+locations of droplet are wrong
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',196,0)
+circle_Wu_20200302
+         2020            3            5           14           59       36.891
+
+currentNdl: 14
+currentHight:  5
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\level.txt
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r2\ndl14_ht5_r2_
+reference image (ref_index =?):  -972
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1089.4
+
+
+x2 =
+
+         1082
+
+Droplet from image -958 might have contact the surface
+Total 13 images have been processed, 13 have been circled, 0 have been centroided.
+------
+locations of droplet are wrong
+------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 198)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',198,0)">line 198</a>)
+locations of droplet are wrong
+} 
+circle_Wu_20200302
+         2020            3            5           15            4        0.524
+
+currentNdl: 14
+currentHight:  5
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_leveled\level.txt
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt5_r3\ndl14_ht5_r3_
+reference image (ref_index =?):  -1066
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1089.4
+
+
+x2 =
+
+       1083.3
+
+Droplet from image -1052 might have contact the surface
+Total 13 images have been processed, 13 have been circled, 0 have been centroided.
+------
+locations of droplet are wrong
+------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 198)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',198,0)">line 198</a>)
+locations of droplet are wrong
+} 
+opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',198,0)
+mean(C{6})>1600
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+mean(C{6})
+
+ans =
+
+       641.82
+
+C{6}
+
+ans =
+
+  78×1 <a href="matlab:helpPopup int32" style="font-weight:bold">int32</a> column vector
+
+   1285
+      0
+   1285
+      0
+   1286
+      0
+   1286
+      0
+   1288
+      0
+   1288
+      0
+   1290
+      0
+   1291
+      0
+   1291
+      0
+   1292
+      0
+   1293
+      0
+   1293
+      0
+   1295
+      0
+   1275
+      0
+   1275
+      0
+   1277
+      0
+   1278
+      0
+   1277
+      0
+   1279
+      0
+   1279
+      0
+   1280
+      0
+   1280
+      0
+   1282
+      0
+   1282
+      0
+   1283
+      0
+   1282
+      0
+   1279
+      0
+   1280
+      0
+   1281
+      0
+   1281
+      0
+   1281
+      0
+   1282
+      0
+   1282
+      0
+   1283
+      0
+   1283
+      0
+   1284
+      0
+   1284
+      0
+   1285
+      0
+   1285
+      0
+
+mean(C{6})>1600
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+mean(C{6})
+
+ans =
+
+       641.82
+
+C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
+mean(C{6})
+
+ans =
+
+   NaN
+
+C
+
+C =
+
+  1×10 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 9
+
+    {0×1 int32}    {0×1 int32}    {0×1 int32}    {0×1 int32}    {0×1 int32}    {0×1 double}    {0×1 double}    {0×1 double}    {0×1 double}
+
+  Column 10
+
+    {0×1 int32}
+
+C{6}
+
+ans =
+
+  0×1 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> column vector
+
+fileID
+
+fileID =
+
+     5
+
+fileID = fopen(filename_out);
+fileID
+
+fileID =
+
+     6
+
+C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
+C{6}
+
+ans =
+
+       1284.5
+       1285.5
+       1286.3
+       1286.4
+       1287.8
+       1288.1
+       1289.7
+       1290.5
+         1291
+       1291.6
+       1292.7
+       1292.9
+       1294.8
+       1274.7
+       1275.1
+       1276.7
+       1277.5
+       1277.2
+       1278.8
+         1279
+         1280
+       1280.3
+       1281.5
+       1282.3
+       1282.9
+       1282.1
+       1279.4
+         1280
+       1280.8
+       1281.2
+       1281.1
+       1282.5
+       1281.6
+       1282.8
+       1282.8
+       1283.6
+       1283.8
+       1285.2
+       1284.5
+
+mean(C{6})
+
+ans =
+
+       1283.6
+
+circle_Wu_20200302
+         2020            3            5           15           18       50.583
+
+currentNdl: 14
+currentHight:  6
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt6_r1\ndl14_ht6_r1_
+reference image (ref_index =?):  -815
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1088.2
+
+
+x2 =
+
+       1084.5
+
+Droplet from image -795 might have contact the surface
+Total 19 images have been processed, 15 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3            5           15           21       27.781
+
+currentNdl: 14
+currentHight:  6
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt6_r2\ndl14_ht6_r2_
+reference image (ref_index =?):  -1158
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -1138 might have contact the surface
+Total 19 images have been processed, 14 have been circled, 5 have been centroided.
+------

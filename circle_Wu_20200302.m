@@ -24,7 +24,7 @@ ext_out = '.txt';
 filename_out = strcat(outDir,'circled',ext_out);
 
 level_out = strcat(levelDir,'level',ext_out);
-disp(level_out);
+% disp(level_out);
 
 prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
 prefix_10 = num2str(currentNdl);
@@ -73,8 +73,7 @@ disp('Click on the middle pick in red line once: ?')
 disp(' ... ')
 disp('Click on the middle pick in green line once: ?')
 [x2,y2g] = ginput(1);
-x1
-x2
+
 level = (x1 + x2)/2;
 
 fid = fopen(level_out,'a');
@@ -183,7 +182,7 @@ for i = 0:1:totalNumber
 end
 
 fileID = fopen(filename_out);
-C = textscan(fileID, '%d %f %f %f %f %d');
+C = textscan(fileID, '%d \t %d \t %d \t %d \t %d \t %8.2f \t %8.2f \t %8.2f \t %8.2f \t %d');
 
 fprintf('Total %d images have been processed, %d have been circled, %d have been centroided.\n', ...
     totalNumber, totalNumber - numCircledFailuer, numCircledFailuer);
