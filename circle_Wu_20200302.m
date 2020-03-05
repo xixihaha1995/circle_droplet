@@ -81,6 +81,8 @@ fid = fopen(level_out,'a');
 fprintf(fid, '%d \t %d \t %d \t %d \t %d \t %8.2f\n',[currentDate;currentNdl;currentHight;currentRun;x1;x2]); 
 fclose(fid);
 
+
+
 numCircledFailuer = 0;
 
 for i = 0:1:totalNumber
