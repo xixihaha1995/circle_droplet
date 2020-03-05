@@ -46,7 +46,8 @@ disp(prefix);
 
 ref_index = input('reference image (ref_index =?):  ');
 FirstIm = ref_index + 1;
-LastIm = input('last image before impacting (LastIm =?):  ');
+% LastIm = input('last image before impacting (LastIm =?):  ');
+LastIm = FirstIm + 30;
 totalNumber = LastIm - FirstIm + 1 ;
 ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
 
@@ -126,8 +127,7 @@ for i = 0:1:totalNumber
     cenYY = mean(boundary(:,1));
     
     if cenYY > level - 38
-        msg = 'droplet might have contact the surface';
-        disp(msg)
+        fprintf('Droplet from image %d might have contact the surface\n', ii);
         break
     end
     

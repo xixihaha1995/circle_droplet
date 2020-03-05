@@ -227,3 +227,48 @@ cenYY =
 
        1062.2
 
+avX =(x1 + x2)/2
+
+avX =
+
+       1085.7
+
+cenYY
+
+cenYY =
+
+       1043.9
+
+level - cenYY
+
+ans =
+
+       39.335
+
+close all
+clc
+clear all
+circle_Wu_20200302
+         2020            3            5           13           20       45.037
+
+currentNdl: 14
+currentHight:  4
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl14_hgt4_r3\ndl14_ht4_r3_
+reference image (ref_index =?):  -854
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+         1082
+
+
+x2 =
+
+       1079.6
+
+Droplet from image -842 might have contact the surfaceTotal 31 images have been processed, 28 have been circled, 3 have been centroided.
+------
