@@ -75,14 +75,16 @@ FirstIm = ref_index + 1;
 % LastIm = input('last image before impacting (LastIm =?):  ');
 LastIm = FirstIm + 30;
 totalNumber = LastIm - FirstIm + 1 ;
-ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext),'bmp'); 
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext)); 
 
 
 Impact_location = 1225; 
 y2 = Impact_location+500;
 y1 = Impact_location-500;
 
-figure(1);
+figure();
+set(gcf,'WindowState','maximized')
+
 plot(smooth(double((ref_a(:, Impact_location-500)))),'r');
 hold on
 plot(smooth(double((ref_a(:, Impact_location+500)))), 'g');

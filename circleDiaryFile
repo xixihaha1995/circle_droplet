@@ -1066,3 +1066,119 @@ if system_dependent('IsDebugMode')==1, dbcont; end
 if system_dependent('IsDebugMode')==1, dbcont; end
 234 have been profiled.
 ----------------------------------
+circle_Wu_20200302
+         2020            3           13           14           51       53.044
+
+currentNdl: 14
+currentHight:  1
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt1_r2\20200108_ndl14_ht1_r2_
+reference image (ref_index =?):  -694
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -685 might have contacted the surface
+Total 8 images have been processed, 4 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           14           53        6.089
+
+currentNdl: 14
+currentHight:  1
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt1_r3\20200108_ndl14_ht1_r3_
+reference image (ref_index =?):  -720
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -711 might have contacted the surface
+Total 8 images have been processed, 4 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           14           54        6.488
+
+currentNdl: 14
+currentHight:  2
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt2_r1\20200108_ndl14_ht2_r1_
+reference image (ref_index =?):  -236
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -225 might have contacted the surface
+Total 10 images have been processed, 0 have been circled, 10 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15            0       48.298
+
+currentNdl: 14
+currentHight:  2
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt2_r2\20200108_ndl14_ht2_r2_
+reference image (ref_index =?):  -655
+{Unrecognized function or variable 'WindowAPI'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 86)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',86,0)">line 86</a>)
+WindowAPI(FigH, 'full');
+} 
+circle_Wu_20200302
+         2020            3           13           15            1        7.078
+
+currentNdl: 14
+currentHight:  2
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt2_r2\20200108_ndl14_ht2_r2_
+reference image (ref_index =?):  -655
+{Unrecognized function or variable 'WindowAPI'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 86)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',86,0)">line 86</a>)
+WindowAPI(FigH, 'full');
+} 
+circle_Wu_20200302
+         2020            3           13           15            4       59.168
+
+currentNdl: 14
+currentHight:  2
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt2_r2\20200108_ndl14_ht2_r2_
+reference image (ref_index =?):  -655
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -646 might have contacted the surface
+Total 8 images have been processed, 6 have been circled, 2 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15            6        30.35
+
+currentNdl: 14
+currentHight:  2
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt2_r3\20200108_ndl14_ht2_r3_
+reference image (ref_index =?):  -490
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -481 might have contacted the surface
+Total 8 images have been processed, 8 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15            7        44.98
+
+currentNdl: 14
+currentHight:  3
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt3_r1\20200108_ndl14_ht3_r1_
+reference image (ref_index =?):  -141
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -131 might have contacted the surface
+Total 9 images have been processed, 3 have been circled, 6 have been centroided.
+------
