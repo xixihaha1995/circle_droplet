@@ -932,3 +932,137 @@ Click on the middle pick in green line once: ?
 Droplet from image -795 might have contacted the surface
 Total 8 images have been processed, 7 have been circled, 1 have been centroided.
 ------
+max(boundary(:,1))
+
+ans =
+
+        1084
+
+levl
+{Unrecognized function or variable 'levl'.
+} 
+level
+
+level =
+
+       1081.4
+
+uiopen('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',1)
+Impact_stalk_2020feb24_a_WU_copy
+         2020            3            5           16           51       12.996
+
+currentNdl: 22
+currentHight:  7
+currentRun:  2
+reference image (ref_index =?):  -2321
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl22_hgt7_r2\20200108_ndl22_ht7_r2_
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+
+x1 =
+
+       1067.3
+
+
+x2 =
+
+         1055
+
+     0
+
+have been profiled.
+----------------------------------
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3           12           19           32
+
+  Column 6
+
+       55.488
+
+currentNdl: 18
+currentHight:  1
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r3\ndl18_ht1_r3_
+reference image (ref_index =?):  -999
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',131,1)">131 </a>    hold off;
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',131,1)">131 </a>    hold off;
+if system_dependent('IsDebugMode')==1, dbquit; end
+circle_Wu_20200302
+  Columns 1 through 5
+
+         2020            3           12           19           34
+
+  Column 6
+
+       29.647
+
+currentNdl: 18
+currentHight:  1
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl18_hgt1_r3\ndl18_ht1_r3_
+reference image (ref_index =?):  -999
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',131,1)">131 </a>    hold off;
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',131,1)">131 </a>    hold off;
+if system_dependent('IsDebugMode')==1, dbcont; end
+Droplet from image -990 might have contacted the surface
+Total 8 images have been processed, 5 have been circled, 3 have been centroided.
+------
+uiopen('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',1)
+Impact_stalk_2020feb24_a_WU_copy
+  Columns 1 through 5
+
+         2020            3           12           19           36
+
+  Column 6
+
+       13.236
+
+currentNdl: 22
+currentHight:  2
+currentRun:  1
+reference image (ref_index =?):  -488
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200109_ndl22_hgt2_r1\20200109_ndl22_ht2_r1_
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',182,1)">182 </a>    plot(x_temp, y_temp, 'r');
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',182,1)">182 </a>    plot(x_temp, y_temp, 'r');
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',182,1)">182 </a>    plot(x_temp, y_temp, 'r');
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\Impact_stalk_2020feb24_a_WU_copy.m',186,1)">186 </a>    profile_x = (y_temp-x1).*sin(alpha)+(x_temp-y1).*cos(alpha);
+if system_dependent('IsDebugMode')==1, dbcont; end
+234 have been profiled.
+----------------------------------

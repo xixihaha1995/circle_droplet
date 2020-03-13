@@ -6,7 +6,7 @@ format shortg
 c = clock;
 disp(c);
 
-currentDate = 20200107;
+currentDate = 20200108;
 % 20200107 is blank
 
 currentNdl = input('currentNdl: ');
@@ -26,13 +26,32 @@ filename_out = strcat(outDir,'circled',ext_out);
 level_out = strcat(levelDir,'level',ext_out);
 % disp(level_out);
 
-prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
+% prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\ndl';
+% prefix_10 = num2str(currentNdl);
+% prefix_11 = '_hgt';
+% prefix_6 = num2str(currentHight);
+% prefix_7 ='_r';
+% prefix_2 = num2str(currentRun);
+% prefix_3 ='\ndl';
+% prefix_12 = num2str(currentNdl);
+% prefix_13 = '_ht';
+% prefix_8 =num2str(currentHight);
+% prefix_9 ='_r';
+% prefix_4 =num2str(currentRun);
+% prefix_5= '_';
+% 
+% prefix = strcat(prefix_1,prefix_10,prefix_11,prefix_6,prefix_7,prefix_2,prefix_3,...
+%     prefix_12,prefix_13,prefix_8,prefix_9,prefix_4,prefix_5);
+
+prefix_1 = 'C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\';
+prefix_14 = num2str(currentDate);
+prefix_15 = '_ndl';
 prefix_10 = num2str(currentNdl);
 prefix_11 = '_hgt';
 prefix_6 = num2str(currentHight);
 prefix_7 ='_r';
 prefix_2 = num2str(currentRun);
-prefix_3 ='\ndl';
+prefix_3 =strcat('\',num2str(currentDate),'_ndl');
 prefix_12 = num2str(currentNdl);
 prefix_13 = '_ht';
 prefix_8 =num2str(currentHight);
@@ -40,8 +59,9 @@ prefix_9 ='_r';
 prefix_4 =num2str(currentRun);
 prefix_5= '_';
 
-prefix = strcat(prefix_1,prefix_10,prefix_11,prefix_6,prefix_7,prefix_2,prefix_3,...
-    prefix_12,prefix_13,prefix_8,prefix_9,prefix_4,prefix_5);
+prefix = strcat(prefix_1,prefix_14,prefix_15,prefix_10,prefix_11,prefix_6,...
+    prefix_7,prefix_2,prefix_3,prefix_12,prefix_13,prefix_8,prefix_9,prefix_4,prefix_5);
+
 disp(prefix);
 
 
