@@ -1182,3 +1182,270 @@ Click on the middle pick in green line once: ?
 Droplet from image -131 might have contacted the surface
 Total 9 images have been processed, 3 have been circled, 6 have been centroided.
 ------
+circle_Wu_20200302
+         2020            3           13           15           11        38.26
+
+currentNdl: 14
+currentHight:  3
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt3_r2\20200108_ndl14_ht3_r2_
+reference image (ref_index =?):  -388
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -378 might have contacted the surface
+Total 9 images have been processed, 4 have been circled, 5 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15           12       28.091
+
+currentNdl: 14
+currentHight:  3
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt3_r3\20200108_ndl14_ht3_r3_
+reference image (ref_index =?):  -477
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -468 might have contacted the surface
+Total 8 images have been processed, 4 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15           15       23.394
+
+currentNdl: 14
+currentHight:  4
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt4_r1\20200108_ndl14_ht4_r1_
+reference image (ref_index =?):  -776
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -764 might have contacted the surface
+Total 11 images have been processed, 11 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15           16        8.745
+
+currentNdl: 14
+currentHight:  4
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt4_r2\20200108_ndl14_ht4_r2_
+reference image (ref_index =?):  -931
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -919 might have contacted the surface
+Total 11 images have been processed, 11 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15           16        59.12
+
+currentNdl: 14
+currentHight:  43
+currentRun:  33
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt43_r33\20200108_ndl14_ht43_r33_
+reference image (ref_index =?):  33
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread>get_full_filename', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 566)" style="font-weight:bold">imread>get_full_filename</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',566,0)">line 566</a>)
+File "C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt43_r33\20200108_ndl14_ht43_r33_00033.bmp" does not exist.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('imread', 'C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m', 375)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\matlab\imagesci\imread.m',375,0)">line 375</a>)
+    fullname = get_full_filename(filename);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 78)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',78,0)">line 78</a>)
+ref_a = imread(strcat(prefix,num2str(ref_index, '%05g'),ext));
+} 
+circle_Wu_20200302
+         2020            3           13           15           17       10.889
+
+currentNdl: 14
+currentHight:  4
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt4_r3\20200108_ndl14_ht4_r3_
+reference image (ref_index =?):  -774
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('regionprops>ComputeEllipseParams', 'C:\Program Files\MATLAB\R2019b\toolbox\images\images\regionprops.m', 766)" style="font-weight:bold">regionprops>ComputeEllipseParams</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\images\images\regionprops.m',766,0)">line 766</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('regionprops', 'C:\Program Files\MATLAB\R2019b\toolbox\images\images\regionprops.m', 287)" style="font-weight:bold">regionprops</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019b\toolbox\images\images\regionprops.m',287,0)">line 287</a>)
+                ComputeEllipseParams(imageSize,stats,statsAlreadyComputed);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('circle_Wu_20200302', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m', 178)" style="font-weight:bold">circle_Wu_20200302</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\circle_droplet\circle_Wu_20200302.m',178,0)">line 178</a>)
+        stats = regionprops('table',BW,'Centroid',...
+} 
+circle_Wu_20200302
+         2020            3           13           15           18        14.73
+
+currentNdl: 14
+currentHight:  4
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt4_r3\20200108_ndl14_ht4_r3_
+reference image (ref_index =?):  -903
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -892 might have contacted the surface
+Total 10 images have been processed, 10 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           13           15           20        6.198
+
+currentNdl: 14
+currentHight:  5
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt5_r1\20200108_ndl14_ht5_r1_
+reference image (ref_index =?):  -619
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -605 might have contacted the surface
+Total 13 images have been processed, 13 have been circled, 0 have been centroided.
+------
+uiopen('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',1)
+circle_Wu_20200302
+         2020            3           16           11            2         42.1
+
+currentNdl: 14
+currentHight:  5
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt5_r3\20200108_ndl14_ht5_r3_
+reference image (ref_index =?):  -618
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -604 might have contacted the surface
+Total 13 images have been processed, 13 have been circled, 0 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11            3       36.729
+
+currentNdl: 14
+currentHight:  6
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt6_r1\20200108_ndl14_ht6_r1_
+reference image (ref_index =?):  -824
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -805 might have contacted the surface
+Total 18 images have been processed, 14 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11            4       42.714
+
+currentNdl: 14
+currentHight:  6
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt6_r2\20200108_ndl14_ht6_r2_
+reference image (ref_index =?):  -863
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -844 might have contacted the surface
+Total 18 images have been processed, 14 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11            5       47.034
+
+currentNdl: 14
+currentHight:  6
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt6_r3\20200108_ndl14_ht6_r3_
+reference image (ref_index =?):  -1130
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -1111 might have contacted the surface
+Total 18 images have been processed, 14 have been circled, 4 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11            8       32.139
+
+currentNdl: 14
+currentHight:  7
+currentRun:  1
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt7_r1\20200108_ndl14_ht7_r1_
+reference image (ref_index =?):  -1017
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -988 might have contacted the surface
+Total 28 images have been processed, 23 have been circled, 5 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11            9       40.288
+
+currentNdl: 14
+currentHight:  7
+currentRun:  2
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt7_r2\20200108_ndl14_ht7_r2_
+reference image (ref_index =?):  -2437
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -2406 might have contacted the surface
+Total 30 images have been processed, 22 have been circled, 8 have been centroided.
+------
+circle_Wu_20200302
+         2020            3           16           11           11       11.302
+
+currentNdl: 14
+currentHight:  7
+currentRun:  3
+C:\Users\lab-admin\Desktop\Lichen_Wu\movies_processed\20200108_ndl14_hgt7_r3\20200108_ndl14_ht7_r3_
+reference image (ref_index =?):  -1120.
+Stretch figure 1 horizontally for a better resolution..... 
+Click on the middle pick in red line once: ?
+ ... 
+Click on the middle pick in green line once: ?
+Droplet from image -1089 might have contacted the surface
+Total 30 images have been processed, 23 have been circled, 7 have been centroided.
+------
+readAndPlotText_Wu_20200223
+         2020            3           16           11           12       26.453
+
+currentNdl: uiopen('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',1)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('uiopen')" style="font-weight:bold">uiopen</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readAndPlotText_Wu_20200223', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m', 29)" style="font-weight:bold">readAndPlotText_Wu_20200223</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',29,0)">line 29</a>)
+currentNdl = input('currentNdl: ');
+} 
+currentNdl: uiopen('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',1)
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('uiopen')" style="font-weight:bold">uiopen</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readAndPlotText_Wu_20200223', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m', 29)" style="font-weight:bold">readAndPlotText_Wu_20200223</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',29,0)">line 29</a>)
+currentNdl = input('currentNdl: ');
+} 
+currentNdl: clear
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('clear')" style="font-weight:bold">clear</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readAndPlotText_Wu_20200223', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m', 29)" style="font-weight:bold">readAndPlotText_Wu_20200223</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',29,0)">line 29</a>)
+currentNdl = input('currentNdl: ');
+} 
+currentNdl: clc
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('clc')" style="font-weight:bold">clc</a>
+Too many output arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readAndPlotText_Wu_20200223', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m', 29)" style="font-weight:bold">readAndPlotText_Wu_20200223</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',29,0)">line 29</a>)
+currentNdl = input('currentNdl: ');
+} 
+currentNdl: {Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readAndPlotText_Wu_20200223', 'C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m', 29)" style="font-weight:bold">readAndPlotText_Wu_20200223</a> (<a href="matlab: opentoline('C:\Users\lab-admin\Desktop\Lichen_Wu\matlab\profileVelocity\readAndPlotText_Wu_20200223.m',29,0)">line 29</a>)
+} 

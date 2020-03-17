@@ -66,11 +66,17 @@ disp(prefix);
 
 
 
+ref_index = -2500;
+ref_file = strcat(prefix,num2str(ref_index, '%05g'),ext);
 
 
 
+while exist(ref_file,'file')==0
+    ref_index = ref_index + 1;
+    ref_file = strcat(prefix,num2str(ref_index, '%05g'),ext);
+end
 
-ref_index = input('reference image (ref_index =?):  ');
+% ref_index = input('reference image (ref_index =?):  ');
 FirstIm = ref_index + 1;
 % LastIm = input('last image before impacting (LastIm =?):  ');
 LastIm = FirstIm + 30;
@@ -156,7 +162,7 @@ for i = 0:1:totalNumber
     cenXX = mean(boundary(:,2));
     cenYY = mean(boundary(:,1));
     
-    if (cenXX >1600 || cenXX <900)
+    if (cenXX >1620 || cenXX <900)
     msg='locations of droplet are wrong';
     error(msg)
     end
